@@ -1,17 +1,16 @@
-const clockContainer = document.querySelector(".clock");
-const clockTitle = clockContainer.querySelector("h1");
- 
-getTime();
+const loginForm = document.querySelector("#login-form");
+const loginInput = document.querySelector("#login-form input");
+const hello = document.querySelector("#hello");
 
-function getTime() {
-  const date = new Date();
-  const hours = date.getHours();
-  const minutes = date.getMinutes();
-  const seconds = date.getSeconds();
-  clockTitle.innerText = `${hours < 10 ? `0${hours}` : hours}:${
-    minutes < 10 ? `0${minutes}` : minutes
-  }:${seconds < 10 ? `0${seconds}` : seconds}`;
-}
- 
-  
-setInterval(getTime, 1000);
+const H = "hidden";
+
+function loginSubmit (event) {
+    event.preventDefault(); //유저가 이름 제출할 때, 기본동작 제어
+    loginForm.classList.add(H); //처음 폼에 클래스 지정
+    const username = loginInput.value; //유저 이름 저장
+    hello.innerText = "Hello " + username; 
+    hello.classList.remove(H);
+} 
+
+loginForm.addEventListener("submit", loginSubmit);
+
