@@ -1,0 +1,17 @@
+.all {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.login-form {
+    display: flex;
+    justify-content: center;
+}
+
+.clockNum {
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+}
