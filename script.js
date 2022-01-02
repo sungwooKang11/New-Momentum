@@ -14,7 +14,7 @@ function loginSubmit (event) {
     loginForm.classList.add(H); //처음 폼에 클래스 지정
     const username = loginInput.value; //유저 이름 저장
     localStorage.setItem(UN, username); //로컬스토리지에 유저이름 저장
-    hello.innerText = "Hello " + username; // `Hello ${username}`; 도 동일한 표기임
+    hello.innerText = "Hello " + username + "!"; // `Hello ${username}`; 도 동일한 표기임
     hello.classList.remove(H);
 } 
 

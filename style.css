@@ -2,6 +2,10 @@
     display: none;
 }
 
+input:focus {
+    outline:none;
+}
+
 .all {
     display: flex;
     flex-direction: column;
@@ -9,15 +13,25 @@
     align-content: center;
 }
 
-.login-form {
+.login-container {
     display: flex;
     justify-content: center;
+}
+
+.nameBox {
+    border: 0;
+    margin-top: 100px;
+    width: 115px;
+}
+
+#hello {
+    margin-top: 100px;
+    margin-bottom: 0;
 }
 
 .clockNum {
+    font-size: 100px;   
     display: flex;
-    justify-content: center;
-    font-size: 100px;
-
-    
+    justify-content: center; 
 }
+
