@@ -29,10 +29,13 @@ input:focus {
     margin-bottom: 0;
 }
 
+.clock {
+    width: 200px;
+    height: 450px;
+}
+
 .clockNum {
     font-size: 100px;   
-    display: flex;
-    justify-content: center; 
     
 }
 
