@@ -5,10 +5,12 @@ const toDoList = document.querySelector("#todo-list");
 const TODOS = "todos";
 let toDos = [];
 
+//투두리스트를 저장하는 함수
 function saveToDos() {
     localStorage.setItem(TODOS, JSON.stringify(toDos));
 }
 
+//투두 없애는 함수
 function deleteToDo(event) {
     const li = event.target.parentElement;
     li.remove();
@@ -16,6 +18,7 @@ function deleteToDo(event) {
     saveToDos();
 }
 
+//투두 채워주는 함수
 function fillToDo(newToDo) {
     const li = document.createElement("li");
     li.id = newToDo.id;
@@ -29,6 +32,7 @@ function fillToDo(newToDo) {
     toDoList.appendChild(li);
 }
 
+//인풋에 입력하고 제출을 제어하는 함수
 function handleToDo(event) {
     event.preventDefault();
     const newToDo = toDoInput.value; 
@@ -42,13 +46,13 @@ function handleToDo(event) {
     saveToDos();
 }
 
-toDoForm.addEventListener("submit", handleToDo);
+toDoForm.addEventListener("submit", handleToDo);//제출이벤트
 
 
 const savedToDos = localStorage.getItem(TODOS);
 
 if(savedToDos !== null) {
-    const parsedToDos = JSON.parse(savedToDos);
+    const parsedToDos = JSON.parse(savedToDos);//JSON에 대한 추가공부 필요
     toDos = parsedToDos;
     parsedToDos.forEach(fillToDo);
 }

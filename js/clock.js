@@ -1,3 +1,4 @@
+//니코쌤 도움받은 코드
 const clockContainer = document.querySelector(".clock");
 const clockTitle = clockContainer.querySelector("h1");
  
@@ -13,6 +14,7 @@ function getTime() {
 getTime();
 setInterval(getTime, 1000);
 
+//내 코드(오류)
 //const clockContainer = document.querySelector(".clock");
 //const clockTitle = clockContainer.querySelector("h1");
  
