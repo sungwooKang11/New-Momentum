@@ -18,24 +18,27 @@ input:focus {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    
 }
 
 .nameBox {
     border: 0;
     margin-top: 100px;
     width: 115px;
-    background: ghostwhite;
-    border-radius: 10px;
+    background: none;
     margin-top: 60px;
     margin-bottom: 30px;
+    border: 1px solid;
+    border-radius: 7px;
+    color: white;
 }
 
 
 #hello {
     margin-top: 60px;
     margin-bottom: 30px;    
-    background: ghostwhite;
-    border-radius: 10px;
+    color: white;
+    font-size: 50px;
 }
 
 .clock {
@@ -48,7 +51,7 @@ input:focus {
 .clockNum {
     font-size: 100px;   
     margin: 0;
-    
+    color: white;
 }
 
 button {
@@ -59,19 +62,25 @@ button {
 .todo-container {
     display: flex;
     flex-direction: column;
-    background: ghostwhite;
+    border: 1px solid;
     border-radius: 10px;
+    color: white;
 }
 
 .todoBox {
     border: 0;
-    width: 100px;
-    background: ghostwhite;
+    width: 200px;
+    background: none;
+    color: white;
 }
 
 img {
+    position: absolute;
     width: 100%;
     height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 .quote {
@@ -83,13 +92,17 @@ img {
     display: flex;
     justify-content: center;
     font-size: 20px;
+    color: white;
 }
 
 .authors {
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
+    color: white;
 }
 
 #weather {
     margin-bottom: 10px;
+    color: white;
 }
