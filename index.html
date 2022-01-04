@@ -1,40 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d7a2c2462d.js" crossorigin="anonymous"></script>
     <title>Momentum.2</title>
 </head>
 <body>
     <div class="all">
-        <div class="container">
+        <div class="container1">
             <form id="login-form" class="hidden">
                 <input class="nameBox" required maxlength="15" type="text" placeholder="What's your name?">
-                
             </form>
             <h1 id="hello" class="hidden"></h1>
+            <div id="weather">
+                <i class="fas fa-cloud"></i>
+                <span class="state"></span><br>
+                
+                <i class="fas fa-map-marker-alt"></i>
+                <span class="city"></span>
+            </div>
             <div class="todo-container">
                 <form id="todo-form">
                     <input class="todoBox" type="text" placeholder="Wtite your To Do" required>
                 </form>
                 <ul id="todo-list"></ul>
             </div>
-            <div class="clock">
-            <h1 class="clockNum">00:00:00</h1></div>
-            </div>
         </div>
-    <div id="quote">
-        <span></span>
-        <span></span>
-    </div>
-    <div id="weather">
-        <i class="fas fa-cloud"></i>
-        <span class="state"></span><br>
-        <i class="fas fa-map-marker-alt"></i>
-        <span class="city"></span>
+        <div class="clock">
+            <h1 class="clockNum">00:00:00</h1>
+        </div>
+            <div id="quote">
+                <span class="content"></span>
+                <span class="authors"></span>
+            </div>
     </div>
     <script src="js/script.js"></script>
     <script src="js/clock.js"></script>
