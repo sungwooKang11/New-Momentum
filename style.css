@@ -13,7 +13,7 @@ input:focus {
     align-content: center;
 }
 
-.login-container {
+.container {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -24,20 +24,28 @@ input:focus {
     border: 0;
     margin-top: 100px;
     width: 115px;
+    background: ghostwhite;
+    border-radius: 10px;
+    margin-top: 60px;
+    margin-bottom: 30px;
 }
 
+
 #hello {
-    margin-top: 100px;
-    margin-bottom: 0;
+    margin-top: 60px;
+    margin-bottom: 30px;    background: ghostwhite;
+    border-radius: 10px;
 }
 
 .clock {
     width: 120px;
     height: 450px;
+    
 }
 
 .clockNum {
     font-size: 100px;   
+    margin: 0;
     
 }
 
@@ -46,9 +54,17 @@ button {
     background: none;
 }
 
+.todo-container {
+    display: flex;
+    flex-direction: column;
+    background: ghostwhite;
+    border-radius: 10px;
+}
+
 .todoBox {
     border: 0;
-    width: 110px;
+    width: 100px;
+    background: ghostwhite;
 }
 
 img {
