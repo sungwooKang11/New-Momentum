@@ -24,13 +24,14 @@ input:focus {
 .nameBox {
     border: 0;
     margin-top: 100px;
-    width: 115px;
+    width: 170px;
     background: none;
     margin-top: 60px;
     margin-bottom: 30px;
     border: 1px solid;
     border-radius: 7px;
     color: white;
+    font-size: 20px;
 }
 
 
