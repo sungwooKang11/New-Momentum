@@ -3,7 +3,8 @@ const API_KEY = "20d3ea9ebdb399b0edf375ee7d5085c0";
 function geoGood(position) {
     const lat = position.coords.latitude; //위도 설정
     const lon = position.coords.longitude; //경도 설정
-    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`; //API 통해서 날씨정보 가져옴
+    const url = `https://api.openweathermap.org/data/2.5/weather?lat=
+                ${lat}&lon=${lon}&appid=${API_KEY}&units=metric`; //API 통해서 날씨정보 가져옴
     fetch(url)
     .then(response => response.json())//여기도 추가공부...
     .then(data => {
